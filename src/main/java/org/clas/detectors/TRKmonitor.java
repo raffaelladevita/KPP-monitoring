@@ -14,10 +14,6 @@ import org.jlab.groot.data.H2F;
 import org.jlab.groot.group.DataGroup;
 import org.jlab.io.base.DataBank;
 import org.jlab.io.base.DataEvent;
-import org.jlab.rec.dc.Constants;
-import org.jlab.rec.dc.GeometryLoader;
-import org.jlab.service.dc.DCHBEngine;
-import org.jlab.service.dc.DCTBEngine;
 
 /**
  *
@@ -26,9 +22,9 @@ import org.jlab.service.dc.DCTBEngine;
 public class TRKmonitor extends DetectorMonitor {
     
     // reconstruction engines
-    DCHBEngine enHB = new DCHBEngine();
-	
-    DCTBEngine enTB = new DCTBEngine();
+//    DCHBEngine enHB = new DCHBEngine();
+//	
+//    DCTBEngine enTB = new DCTBEngine();
 
  
     public TRKmonitor(String name) {
@@ -105,8 +101,8 @@ public class TRKmonitor extends DetectorMonitor {
     @Override
     public void drawDetector() {
         // Load the Constants
-        Constants.Load(true, true, 0);
-        GeometryLoader.Load(10, "default");
+//        Constants.Load(true, true, 0);
+//        GeometryLoader.Load(10, "default");
 
         for(int s =0; s< 6; s++)
             for(int slrnum = 5; slrnum > -1; slrnum--) {

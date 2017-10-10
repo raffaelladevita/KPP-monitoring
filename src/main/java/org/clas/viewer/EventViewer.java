@@ -75,7 +75,7 @@ public class EventViewer implements IDataEventListener, DetectorListener, Action
     private int analysisUpdateTime = 100;
     private int runNumber  = 0;
     
-   // detector monitors
+    // detector monitors
     DetectorMonitor[] monitors = {
     		new DCmonitor("DC"),
     		new HTCCmonitor("HTCC"),
